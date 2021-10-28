@@ -1,0 +1,193 @@
+1
+set current population to 328441687
+set birth_day to 10800
+set death_day to -7200
+set immigrant_day to 3200
+set days to 0
+when days is less than 365
+	add birth_day, death_day, immigrant_day to current population
+when days equals 365 then print current population
+
+
+2
+set input_seconds to user_seconds
+set days to 0
+set hours to 0
+set minutes to 0
+set seconds to 0
+set extra_time to 0
+
+input_seconds divided by 86400 set equal to days, set remainder to extra_time
+if days is less than 1 then set days to 0, and extra_time to input seconds
+
+extra_time divided by 3600 set equal to hours
+if hours is less than 1 then set hours to 0, set extra_time to extra_time + remainder
+else set remainder to extra_time
+
+extra_time divided by 60 set equal to minutes
+if minutes is less then 1 then set minutes to 0, set extra_time to extra_time + remainder
+else set remainder to extra_time
+
+set extra_time to seconds
+
+output "The time is" days "days," hours "hours," minutes "minutes, and" seconds "seconds."
+
+3
+output "Which option would you like to choose? 1. Fox, 2. Bunny, 3. Sloth, 4. Quit?"
+
+if user choses fox
+	prompt user "What is the agility?"
+	user input = fox_agility
+	
+	prompt user "What is the strength?"
+	user input = fox_stregth
+	
+	hirescore_fox = 1.8 * fox_agility + 2.16 * fox_strength
+
+	output "Fox hirescore is" hirescore_fox
+	
+	loop back
+
+if user choses bunny
+	prompt user "What is the agility?"
+	user input = bunny_agility
+	
+	prompt user "What is the speed?"
+	user input = bunny_speed
+	
+	hirescore_bunny = 1.8 * bunny_agility + 3.24 * bunny_speed
+
+	output "Bunny hirescore is" hirescore_bunny
+	
+	loop back
+
+if user choses sloth
+	prompt user "What is the strength?"
+	user input = sloth_strength
+	
+	prompt user "What is the speed?"
+	user input = sloth_speed
+	
+	hirescore_sloth = 2.16 * sloth_strength + 3.24 * sloth_speed
+
+	output "Sloth hirescore is" hirescore_sloth
+	
+	loop back
+
+if user choses quit
+	end program
+
+4.
+
+set current_balance to 10000
+
+set counter to 0
+
+set years to 0
+
+while current_balance > 0
+	current_balance = current_balance - 500
+	current balance = current_balance * 1.05
+	counter = counter + 1
+	
+	repeat loop
+
+
+counter / 12 = years
+
+output "It took" years "years to get to $0."
+
+4B.
+set current_balance to 0
+
+set principle to 0
+set rate to 0
+set monthy_expenditure to 0
+
+set counter to 0
+set years to 0
+
+output "What is the rate(enter in decimal form)?"
+
+output "What is the monthly expenditure(must be greater than 0)?"
+user input = monthy_expenditure
+
+output "What is the principle?"
+user input = principle
+
+
+while current_balance > 0
+	current_balance = principle - monthly_expenditure
+	current balance = current_balance * rate
+	counter = counter + 1
+	
+	if current_balance increases in value compared to last loop exit loop
+
+	repeat loop
+
+
+counter / 12 = years
+
+output "It took" years "years to get to $0."
+
+
+5.
+declare user_word
+
+output "Enter 10 characters"
+user_input = user_word
+
+vowels = 0
+
+if user_word contains "a" "e" "i" "o" "u"
+	tally number of times "a" "e" "i" "o" "u" appears in user_ word set this equal to vowels
+
+
+else
+	exit
+
+output "You word contains" vowels "vowels."
+
+
+
+6.
+user_fahrenheit = 0
+user_celsius = 0
+
+output "What is the temprature in Fahrenheit?"
+user input = user_fahrenheit
+
+user_celsius = (5/9)(user_fahrenheit -32)
+
+output "That is" user_celsius "Celsius."
+
+7.
+Compile time errors:
+Instead of "cout" the program says "cot"
+There is no semi colon on the end of the text output line.
+
+Could not fine run-time error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
